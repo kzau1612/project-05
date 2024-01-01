@@ -13,6 +13,10 @@ a {
   text-decoration: none;
 }
 
+li {
+  list-style: none;
+}
+
 .section-title {
   margin-top: 12px;
   color: #212832;
@@ -22,8 +26,8 @@ a {
   line-height: 1.25; /* 125% */
 }
 
-.section-desc,
-.section-stength {
+.section-desc {
+  margin-top: 20px;
   color: #696d76;
   font-size: 1.8rem;
   font-style: normal;
@@ -51,6 +55,7 @@ a {
 }
 
 .btn {
+  display: inline-block;
   color: #fff;
   text-align: center;
   font-size: 1.6rem;
@@ -73,12 +78,6 @@ a {
 
 .header {
   padding: 42px 0 0;
-}
-
-.header__inner,
-.work__inner {
-  display: flex;
-  align-items: center;
 }
 
 .nav__list {
@@ -148,24 +147,50 @@ a {
   opacity: 0.7;
 }
 
-/* hero */
+.img {
+  width: 100%;
+}
 
-.hero {
+.hero,
+.work,
+.card,
+.transfer {
   padding: 80px 0;
 }
 
-.hero__inner {
+.header__inner,
+.hero__inner,
+.work__inner,
+.card__inner,
+.transfer__inner {
   display: flex;
   align-items: center;
 }
 
+.work__media,
+.card__content,
+.transfer__content {
+  width: 40%;
+}
+
+.work__content,
+.card__media,
+.transfer__media {
+  width: 60%;
+}
+
+/* hero */
+
 .hero__content {
-  width: 46%;
+  width: 47%;
+}
+
+.hero__media {
+  width: 53%;
 }
 
 .hero__media {
   margin-left: 60px;
-  width: 54%;
 }
 
 .hero__title {
@@ -218,27 +243,11 @@ a {
   margin-top: 20px;
 }
 
-.hero__img {
-  width: 100%;
-}
-
 /* work */
 
-.work {
-  padding: 80px 0;
-}
-
-.work__media {
-  width: 46%;
-}
-
-.work__content {
-  width: 54%;
+.work__content,
+.card__media {
   padding-left: 130px;
-}
-
-.work__img {
-  width: 100%;
 }
 
 .work-list {
@@ -262,4 +271,41 @@ a {
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.75; /* 175% */
+}
+
+/* card */
+.card__list,
+.transfer__list {
+  margin-top: 28px;
+}
+
+.card__item,
+.transfer__item {
+  display: flex;
+  align-items: center;
+  color: #212832;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+}
+
+.item--dot::before {
+  display: inline-block;
+  content: "";
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #7264d6;
+  margin-right: 12px;
+}
+
+.card__btn {
+  margin-top: 38px;
+  padding: 15px 30px;
+}
+
+/* transfer */
+
+.transfer__media {
+  padding-right: 130px;
 }
