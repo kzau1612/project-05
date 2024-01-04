@@ -602,3 +602,18 @@ li {
 .footer__input::placeholder {
   opacity: 0.7;
 }
+
+.footer__contact {
+  margin-top: 54px;
+  display: flex;
+  column-gap: 100px;
+}
+
+.footer__email,
+.footer__phone {
+  color: #6a6e78;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+  text-decoration-line: underline;
+}
