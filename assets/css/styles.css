@@ -533,3 +533,72 @@ li {
 .download__icon {
   width: 100%;
 }
+
+/* footer */
+
+.footer__row {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+}
+
+.footer__title ~ .footer__title {
+  margin-top: 48px;
+}
+
+.footer__list,
+.footer__address,
+.footer__action {
+  margin-top: 24px;
+}
+
+.footer__img {
+}
+
+.footer__title {
+  color: #212832;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 1.67; /* 166.667% */
+}
+
+.footer__link,
+.footer__address {
+  color: #6a6e78;
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 1.67; /* 166.667% */
+}
+
+.footer__item {
+  margin-top: 10px;
+}
+
+.footer__address {
+  width: 370px;
+}
+
+.footer__action {
+  display: flex;
+}
+
+.footer__btn {
+  margin-left: 20px;
+  background: #7264d6;
+}
+
+.footer__input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 0.6rem;
+  border: 1px solid #8e919a;
+  outline: none;
+  color: #8e919a;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: 1.75; /* 175% */
+}
+
+.footer__input::placeholder {
+  opacity: 0.7;
+}
